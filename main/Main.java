@@ -1,7 +1,8 @@
 package UTSS.main;
-
-public class Main{
-    public static void main(String[] args) {
-        System.out.println("test");
+import UTSS.view.*;
+public class Main {
+    static MainMenu mainMenu = new MainMenu();
+    public static void main(String[] args) {    
+        mainMenu.menu();
     }
 }

@@ -36,4 +36,10 @@ public class Stage {
         this.stageLocation = stageLocation;
     }
 
+    public void getStageDetails(){
+        System.out.println("nama stage : " + this.stageName);
+        System.out.println("kapasitas " + this.capacity);
+        System.out.println("lokasi : " + this.stageLocation);
+    }
+
 }

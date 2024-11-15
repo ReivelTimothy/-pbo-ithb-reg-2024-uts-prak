@@ -17,5 +17,10 @@ public class Band extends Artist {
     public void setNumberOfMember(int numberOfMember) {
         this.numberOfMember = numberOfMember;
     }
+    @Override
+    public void getDetails(){
+        super.getDetails();
+        System.out.println("jumlah member : " + this.numberOfMember);
+    }
 
 }

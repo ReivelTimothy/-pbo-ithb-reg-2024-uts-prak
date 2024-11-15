@@ -7,7 +7,7 @@ public abstract class Artist implements Ipayable {
     
     public Artist(String name, double performancefee, Genre genre) {
         this.name = name;
-        Performancefee = performancefee;
+        this.Performancefee = performancefee;
         this.genre = genre;
     }
 
@@ -33,6 +33,12 @@ public abstract class Artist implements Ipayable {
     }
     public void setGenre(Genre genre) {
         this.genre = genre;
+    }
+
+    public void getDetails(){
+        System.out.println("name : " + this.name);
+        System.out.println("performance fee : " + this.Performancefee);
+        System.out.println("genre : " + this.genre);
     }
     
 }

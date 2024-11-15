@@ -67,4 +67,21 @@ public class PerformanceSchedule {
     public void setArtist(Artist artist) {
         this.artist = artist;
     }
+
+    public void schedule(){
+        System.out.println("jam mulai : " + this.startTime);
+        System.out.println("jam berakhir : " + this.endTime);
+    }
+    public void schedulePerformance(){
+        System.out.print("artis " );
+        this.artist.getDetails();
+        System.out.println("\nvendor ");
+        for(Vendor vendor : vendor ){
+            vendor.getVendorDetail();
+        }
+        System.out.println("\njam mulai : " + this.startTime);
+        System.out.println("jam berakhir : " + this.endTime);
+        
+        
+    }
 }

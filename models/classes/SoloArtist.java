@@ -17,6 +17,10 @@ public class SoloArtist extends Artist {
     public void setAssistantName(String assistantName) {
         this.assistantName = assistantName;
     }
-    
+    @Override
+    public void getDetails(){
+        super.getDetails();
+        System.out.println("nama asisten: " + this.assistantName);
+    }
     
 }
